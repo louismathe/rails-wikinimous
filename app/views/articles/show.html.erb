@@ -1,0 +1,16 @@
+
+<%= @article.title %>
+<br>
+
+<%= @article.content %>
+<br>
+
+
+
+<%= link_to "back home", root_path %>
+ <%= link_to "edit", edit_article_path %> <br>
+<%= link_to "Delete", article_path(@article),
+        method: :delete,
+        data: { confirm: "Are you sure?" } %>
+
+
