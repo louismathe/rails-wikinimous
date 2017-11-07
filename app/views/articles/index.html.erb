@@ -1,10 +1,10 @@
 
-<h1> Mes articles</h1>
+<h1 class="test"> Mes articles</h1>
 
 <ul>
   <% @articles.each do |article| %>
     <li>
-      <h3> <%= link_to "#{article.title}", article_path(article) %></h3>
+      <h3 class= "title"> <%= link_to "#{article.title}", article_path(article) %></h3>
     </li>
       <p> <%= article.content %></p>
       <br>
